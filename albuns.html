@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #a01376;
+        }
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            /*centraliza o menu*/
+            gap: 20px;
+        }
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #6e505e;
+            color: white;
+            text-align: center;
+
+        }
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .img img {
+            width: 125px;
+            height: 115px;
+        }
+
+        @media all and (min-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+
+         
+
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_anitta {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Albuns de Anitta</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="albuns.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_anitta">
+            <img src="anitta1.jpeg" width="400"> 
+            <div class="infos">
+                <p><strong>Ocupação</strong> Cantora e compositora</p>
+                <p>
+                    <strong>Data do Nascimento</strong>
+                    30/03/1993
+                </p>
+            
+                <br><br><br>
+            </div>
+
+        </aside>
+        <section class=" principal">
+            <h1>
+                Obras
+            </h1>
+            <div class="card">
+                <div class="img">
+                    <img src="À_Procura_da_Anitta_Perfeita.png">
+
+                    <div class="">
+                        <h2>À Procura da Anitta Perfeita</h2>
+                        <p>Capa do album</p>
+                    
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="Anitta_-_Meu_Lugar.jpg">
+
+                    <div class="">
+                        <h2>Meu Lugar</h2>
+                        <p>Capa do album</p>
+                    
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="Capa_de_Bang.jpg">
+
+                    <div class="">
+                        <h2>Bang</h2>
+                        <p>Capa do album</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="Funk_Generation_-_A_Favela_Love_Story.png">
+
+                    <div class="">
+                        <h2> Funk Generation - A Favela Love Story </h2>
+                        <p>Capa do album</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    </div>
+</body>
+
+</html>
